@@ -6,13 +6,17 @@ import (
 	"testing"
 )
 
+const (
+	ARRAY_LEN = 1000
+)
+
 var (
 	array []string
 )
 
 func init() {
 	array = []string{}
-	for i := 0; i < 200; i++ {
+	for i := 0; i < ARRAY_LEN; i++ {
 		array = append(array, fmt.Sprint(i))
 	}
 }
